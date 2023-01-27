@@ -63,6 +63,7 @@ Common
     border: none;
     color: white;
     padding:10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -128,20 +129,21 @@ main{
 
 
 main .first_container{
-    padding: 80px 400px;
+    padding: 90px 400px;
     background-color: #b4d0e7;
 }
 
 
 main h1{
     font-size: 70px;
-    text-align: center;
+    padding-bottom: 60px;
+    line-height: 100px;
 }
 
 .first_container section{
     display: flex; 
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: start;
     flex-wrap: wrap;
 }
 
@@ -154,6 +156,20 @@ main h1{
 }
 
 .first_container p{
-    width: 400px;
+    width: 300px;
 }
 
+.first_container button{
+    margin: 30px 0;
+}
+
+.fa-arrow-down{
+    margin-top:130px;
+    font-size: 40px;
+}
+
+/* .intro_image{
+    position:relative;
+    top: 50px;
+    left: 200px;
+} */
