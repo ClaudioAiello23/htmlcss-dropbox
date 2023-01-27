@@ -20,7 +20,7 @@ Setup
     height: 80px;
 } */
 
-main{
+.slim_container{
     height: 1000px;
     background-color: green;
 }
@@ -108,3 +108,15 @@ ul.menu{
     position: relative;
     bottom: 3px;
 }
+
+/* 
+*********************
+Main
+********************* 
+*/
+
+main .slim_container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
