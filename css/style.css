@@ -20,10 +20,12 @@ Setup
     height: 80px;
 } */
 
-.first_container{
-    height: 750px;
+.slim_container{
+    height: 200px;
     background-color: green;
+
 }
+
 
 /* 
 *****************************************
@@ -42,7 +44,7 @@ il colore bianco senza avere il colore di default del link; proprietà
 da utilizzare: color: inherit; **eredita** 
 */
 
-header, footer{
+header, .main_first_container a, footer{
     color:black;
     text-decoration: none;
 }
@@ -54,7 +56,7 @@ header a, footer a{
 
 /* 
 *****************************************
-Common
+Buttons
 ***************************************** 
 */
 
@@ -122,54 +124,61 @@ Main
 */
 
 /* forzata questa regola per riuscire a far partire il testo dopo l'header
-fisso e non sovrapporlo. Padding-top: 80px; */
-main{
+fisso e non sovrapporlo. Padding-top: 120px; */
+/* main{
     padding-top: 80px;
-} 
+}  */
 
 
-main .first_container{
-    padding: 90px 400px;
+main .main_first_container{
+    padding: 120px 300px 0 300px;
     background-color: #b4d0e7;
 }
 
 
 main h1{
     font-size: 70px;
-    padding-bottom: 60px;
+    margin-bottom: 30px;
     line-height: 100px;
 }
 
-.first_container section{
+.main_first_container section{
     display: flex; 
-    justify-content: space-around;
+    justify-content: center;
     align-items: start;
     flex-wrap: wrap;
 }
 
 .intro_image{
-    width: 800px;
+    width: 70%;
 }
 
 .intro_image img{
     width: 100%;
 }
 
-.first_container p{
-    width: 300px;
+.intro_content{
+    padding-top: 40px;
+    width: 30%;
 }
 
-.first_container button{
-    margin: 30px 0;
+.main_first_container button{
+    margin: 40px 0;
 }
+
 
 .fa-arrow-down{
-    margin-top:130px;
     font-size: 40px;
+    position:relative;
+    top:20px;
 }
 
-/* .intro_image{
+.intro_image{
     position:relative;
-    top: 50px;
-    left: 200px;
-} */
+    top:40px;  
+}
+
+
+
+
+
