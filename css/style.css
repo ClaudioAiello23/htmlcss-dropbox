@@ -20,8 +20,8 @@ Setup
     height: 80px;
 } */
 
-.slim_container{
-    height: 200px;
+.main_slim_container{
+    height: 1000px;
     background-color: green;
 
 }
@@ -123,12 +123,10 @@ Main
 ***************************************** 
 */
 
+/* Main First Container */
+
 /* forzata questa regola per riuscire a far partire il testo dopo l'header
 fisso e non sovrapporlo. Padding-top: 120px; */
-/* main{
-    padding-top: 80px;
-}  */
-
 
 main .main_first_container{
     padding: 120px 300px 0 300px;
@@ -179,6 +177,16 @@ main h1{
 }
 
 
+/* Main Slim Container */
 
+.main_slim_container{
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.main_slim_container h2{
+    font-size: 35px;
+}
 
 
