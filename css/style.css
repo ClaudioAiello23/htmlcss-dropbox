@@ -16,9 +16,9 @@ Setup
 ********************* 
 */
 
-header{
+/* header{
     height: 80px;
-}
+} */
 
 main{
     height: 1000px;
@@ -61,10 +61,16 @@ Header
 ********************* 
 */
 
+/* Inserimento Header Fisso con position:fixed, width 100% e z-index */
 header{
+    padding: 25px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width:100%;
+    z-index: 999;
+    background-color: white;
 }
 
 
