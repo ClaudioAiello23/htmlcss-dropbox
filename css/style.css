@@ -1,7 +1,7 @@
 /* 
-*********************
+******************************************
 Reset
-********************* 
+*****************************************
 */
 
 *{
@@ -11,24 +11,24 @@ Reset
 }
 
 /* 
-*********************
+*****************************************
 Setup
-********************* 
+**************************************** 
 */
 
 /* header{
     height: 80px;
 } */
 
-.slim_container{
-    height: 1000px;
+.first_container{
+    height: 750px;
     background-color: green;
 }
 
 /* 
-*********************
+*****************************************
 Common
-********************* 
+***************************************** 
 */
 
 body{
@@ -36,11 +36,11 @@ body{
 }
 
 /* 
-*****************
 Fare in modo che i link dell' Header e del Footer
 ereditino dal contenitore di riferimento (Header/Footer)
 il colore bianco senza avere il colore di default del link; proprietà
-da utilizzare: color: inherit; **eredita** */
+da utilizzare: color: inherit; **eredita** 
+*/
 
 header, footer{
     color:black;
@@ -52,18 +52,33 @@ header a, footer a{
     text-decoration: inherit;
 }
 
+/* 
+*****************************************
+Common
+***************************************** 
+*/
+
+.standard_buttons{
+    background-color: #0061ff;
+    border: none;
+    color: white;
+    padding:10px;
+}
+
+
+
 /* ******************* */
 
 
 /* 
-*********************
+*****************************************
 Header
-********************* 
+*****************************************
 */
 
 /* Inserimento Header Fisso con position:fixed, width 100% e z-index */
 header{
-    padding: 25px 0;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,35 +103,57 @@ ul.menu{
 }
 
 .menu a{
-    padding: 0 20px;
+    padding: 0 20px 0 30px;
 }
 
-.left_icons, .small_logo{
+.left_h{
     padding-left: 30px;
 }
 
-.right_icons{
+.right_h{
     padding-right: 30px;
 }
 
-.button{
-    background-color: #0061ff;
-    border: none;
-    color: white;
-    width: 50px;
-    height: 25px;
-    position: relative;
-    bottom: 3px;
-}
-
 /* 
-*********************
+*****************************************
 Main
-********************* 
+***************************************** 
 */
 
-main .slim_container{
-    max-width: 1200px;
-    margin: 0 auto;
+/* forzata questa regola per riuscire a far partire il testo dopo l'header
+fisso e non sovrapporlo. Padding-top: 80px; */
+main{
+    padding-top: 80px;
+} 
+
+
+main .first_container{
+    padding: 80px 400px;
+    background-color: #b4d0e7;
+}
+
+
+main h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+.first_container section{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro_image{
+    width: 800px;
+}
+
+.intro_image img{
+    width: 100%;
+}
+
+.first_container p{
+    width: 400px;
 }
 
