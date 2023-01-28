@@ -51,7 +51,6 @@
 
     <!-- Inizio struttura Main -->
     <main>
-        <!-- Inizio Main con margini ristretti -->
         <div class="main_first_container">
             <!-- Inizio sezione introduttiva -->
             <section>
@@ -68,22 +67,23 @@
                 
             </section>
             <!-- Fine sezione introduttiva -->
-
         </div>
-        <!-- Fine Main con margini ristretti -->
 
         <!-- Inizio Main con margini ristretti -->
         <div class="main_slim_container">
+            <!-- Inizio Sezione piano abbonamenti -->
             <section>
                 <h2>Trova il piano business che fa per te</h2>
-                <div>
-                    <input type="radio" name="fatturazione" value="mensile" required>Fatturazione mensile
-                    <input type="radio" name="fatturazione" value="annuale" required>Fatturazione annuale
+                <div class="radio_buttons">
+                    <input type="radio" name="fatturazione" value="mensile" required> <span> Fatturazione mensile</span> 
+                    <input type="radio" name="fatturazione" value="annuale" required> <span> Fatturazione annuale</span>
                 </div>
+                
                 <div class="subscription">
+                    <!-- Inizio piano abbonamento Singolo -->
                     <div class="plan">
                         <div class="client">
-                            <div>Singolo</div>
+                            <div><i class="fa-solid fa-user"></i> Singolo</div>
                         </div>
                         <div class="type">
                             <h3>Professional</h3>  
@@ -91,9 +91,9 @@
                             <div>/mese</div>
                         </div>
                         <div class="feature">
-                            <div>1 utente</div>
-                            <div>5 TB di spazio di archiviazione sicuro</div>
-                            <div>Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                            <div><i class="fa-solid fa-user"></i> 1 utente</div>
+                            <div><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</div>
+                            <div><i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura</div>
                         </div>
                         <div class="trial">
                             <button type="submit" class="standard_buttons">Prova gratis per 30 giorni</button>
@@ -103,15 +103,77 @@
                         <div >
                             <strong>Punti Salienti del Piano</strong>
                             <ul class="main_points">
-                                <li>Invia file fino a 100 GB con Dropbox Transfert</li>
-                                <li>Cartelle offline su dispositivi mobili</li>
+                                <li><i class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</li>
+                                <li><i class="fa-solid fa-check"></i> Cartelle offline su dispositivi mobili</li>
                             </ul>
                         </div>
                     </div>
-                    <div>prova2</div>
-                    <div>prova3</div>
+                    <!-- Fine piano abbonamento Singolo -->
+                    <!-- Inizio piano abbonamento Team -->
+                    <div class="plan">
+                        <div class="client">
+                            <div><i class="fa-solid fa-people-group"></i> Team</div>
+                        </div>
+                        <div class="type">
+                            <h3>Advanced</h3>  
+                            <strong>€ 18,00</strong>  
+                            <div>/utente/mese</div>
+                        </div>
+                        <div class="feature">
+                            <div><i class="fa-solid fa-user"></i> 3 o più utenti</div>
+                            <div><i class="fa-solid fa-folder"></i> Tutto lo spazio di cui ha bisogno il tuo team</div>
+                            <div><i class="fa-solid fa-people-group"></i> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
+                        </div>
+                        <div class="trial">
+                            <button type="submit" class="standard_buttons">Prova gratis per 30 giorni</button>
+                            <div>oppure <a href="#">acquista ora</a></div>
+                            <hr>
+                        </div>
+                        <div >
+                            <strong>Punti Salienti del Piano</strong>
+                            <ul class="main_points">
+                                <li><i class="fa-solid fa-check"></i> Nessun limite di spazio per i file</li>
+                                <li><i class="fa-solid fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                                <li><i class="fa-solid fa-check"></i> Risparmio del 50% rispetto alle iscrizioni singole</li>
+                                <li><i class="fa-solid fa-check"></i> Possibilità di inserire nuovi membri del team</li>
+                                <li><i class="fa-solid fa-check"></i> Gestione dei permessi in base ai ruoli</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Fine piano abbonamento Team -->
+                    <!-- Inizio piano abbonamento Aziende -->
+                    <div class="plan">
+                        <div class="client">
+                            <div><i class="fa-solid fa-building"></i> Azienda</div>
+                        </div>
+                        <div class="type">
+                            <h3>Enterprise</h3>  
+                            <strong>Contattaci</strong>  
+                            <div> - </div>
+                        </div>
+                        <div class="feature">
+                            <div><i class="fa-solid fa-user"></i> 10 o più utenti</div>
+                            <div><i class="fa-solid fa-folder"></i> Soluzioni personalizzabili per la tua azienda </div>
+                            <div><i class="fa-solid fa-share-nodes"></i> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga sacala</div>
+                        </div>
+                        <div class="trial">
+                            <button type="submit" class="standard_buttons">Prova gratis per 30 giorni</button>
+                            <div>oppure <a href="#">acquista ora</a></div>
+                            <hr>
+                        </div>
+                        <div >
+                            <strong>Punti Salienti del Piano</strong>
+                            <ul class="main_points">
+                                <li><i class="fa-solid fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                                <li><i class="fa-solid fa-check"></i> Servizio assistenza 24/h</li>
+                                <li><i class="fa-solid fa-check"></i> Possibilità di personalizzazione totale</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Fine piano abbonamento Aziende -->
                 </div>
             </section>
+            <!-- Fine Sezione piano abbonamenti -->
         </div>
         <!-- Fine Main con margini ristretti -->
 
