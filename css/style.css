@@ -187,6 +187,82 @@ main h1{
 
 .main_slim_container h2{
     font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.subscription{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscription > div{
+    background-color: white;
+    border: 1px solid gray;
+    width: 280px;
+}
+
+.client{
+    height: 50px;
+    background-color: orange;
+    position: relative;
+}
+
+.client > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.plan > div{
+    padding: 30px 20px;
+}
+
+.type{
+    line-height: 40px;
 }
 
 
+/* Selettore avanzato :not(); tutte le scritte presenti nella classe
+"subscription" hanno font size "14"; solo l'h3 classe "subscription"
+ha font size "25". */
+
+.type h3{
+    font-size: 25px;
+}
+
+.subscription:not(.type h3)
+{
+    font-size: 14px;
+}
+/* 
+************************** */
+
+.feature > div{
+    padding-bottom: 20px;
+}
+
+.feature > div:last-child{
+    padding-bottom: 0;
+}
+
+.trial > div{
+    padding: 30px 0;
+}
+
+.plan hr{
+    width: 50px;
+}
+
+.main_points li{
+    padding: 20px 0;
+    list-style: none;
+}
+
+/* prova con .plan display flex column
+.plan{
+    display: flex;
+    flex-direction: column;
+} */
