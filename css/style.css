@@ -26,10 +26,10 @@ Setup
 
 } */
 
-.info_enterprise_plan{
+/* .info_enterprise_plan{
     background-color: red;
     height: 300px;
-}
+} */
 
 
 /* 
@@ -150,6 +150,7 @@ main h1{
     justify-content: center;
     align-items: start;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .intro_image{
@@ -172,8 +173,9 @@ main h1{
 
 .fa-arrow-down{
     font-size: 40px;
-    position:relative;
-    top:20px;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
 }
 
 .intro_image{
@@ -253,23 +255,40 @@ ha font size "25". */
 /* 
 ************************** */
 
+
 .feature > div{
     padding-bottom: 20px;
+}
+
+.feature div{
+    display: flex;
 }
 
 .feature > div:last-child{
     padding-bottom: 0;
 }
 
+.plan i{
+    margin-right: 5px;
+}
+
 .trial > div{
     padding: 30px 0;
 }
+
+/* forzatura singola per allineare il bottone blu del
+Piano Abbonamento Singolo ai bottoni degli altri Piani Abbonamento */
+#single_plan_trial{
+    padding-top: 48px;
+}
+/* fine forzatura */
 
 .plan hr{
     width: 50px;
 }
 
 .main_points li{
+    display: flex;
     padding: 20px 0;
     list-style: none;
 }
@@ -278,6 +297,25 @@ ha font size "25". */
     color: blue;
 }
 
+.info_enterprise_plan{
+    margin-top: 30px;
+    border: 1px solid grey;
+    position: relative;
+}
+
+.info_enterprise_plan .type{
+    width: 75%;
+}
+
+.info_enterprise_plan .type p{
+    padding-top: 50px;
+}
+
+.info_enterprise_plan button{
+    position: absolute;
+    top: 95px;
+    right: 30px;
+}
 
 
 
