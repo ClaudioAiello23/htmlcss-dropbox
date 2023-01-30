@@ -32,7 +32,7 @@ SETUP
 } */
 
 /* .main_partners{
-    /* height: 400px; */
+    height: 400px; 
     background-color: yellow;
 } */
 
@@ -245,7 +245,7 @@ main h1{
 "subscription" hanno font size "14"; solo l'h3 classe "subscription"
 ha font size "25". */
 
-.type h3{
+h3{
     font-size: 25px;
 }
 
@@ -308,11 +308,15 @@ Piano Abbonamento Singolo ai bottoni degli altri Piani Abbonamento */
     position: relative;
 }
 
-.info_enterprise_plan .type{
+.info_enterprise_plan h3{
+    padding-bottom: 30px;
+}
+
+.info_enterprise_plan .info_details{
     width: 75%;
 }
 
-.info_enterprise_plan .type p{
+.info_enterprise_plan p{
     padding-top: 50px;
 }
 
@@ -366,6 +370,32 @@ dell'immagine e 130% al contenitore del contenuto */
 }
 
 
+/* MAIN SLIM CONTAINER - DROPBOX BUSINESS */
+
+.main_business{
+    margin-top: 30px 0;
+}
+
+.business_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.business_content{
+    width: 250px;
+}
+
+.business_content img{
+    width: 100%;
+}
+
+.business_container h3{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
 
 
 
