@@ -331,24 +331,17 @@ Piano Abbonamento Singolo ai bottoni degli altri Piani Abbonamento */
 
 
 .main_partners{
-    padding: 70px 0;
+    padding: 90px 0;
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
 }
 
 
-/* NOTE- Da chiedere: ho dovuto impostare larghezza 200% al contenitore
-dell'immagine e 130% al contenitore del contenuto */
 .partner_content{
-    padding: 40px 40px;
-    width: 130%;
+    padding: 40px 30px;
+    flex-basis: 70%;
 }
 
-.partner_image{
-    width: 200%;
-}
-/* fine nota */
 
 .partner_image img{
     width: 100%;
@@ -379,16 +372,22 @@ dell'immagine e 130% al contenitore del contenuto */
 .business_container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
+/* Regola "calc" da inserire (insieme a display:wrap nel contenitore)
+per far stare 3 blocchi in una sola riga, a prescindere
+dalla risoluzione dello schermo. */
+
 .business_content{
-    width: 250px;
+    width: calc(100%/3);
+    padding: 0 20px;
 }
+/* *********************** */
 
 .business_content img{
     width: 100%;
+    display: block;
 }
 
 .business_container h3{
