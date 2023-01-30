@@ -397,5 +397,9 @@ dell'immagine e 130% al contenitore del contenuto */
     margin-bottom: 20px;
 }
 
+.statistics{
+    margin: 150px 0;
+    max-width: 75%;
+}
 
 
