@@ -1,6 +1,6 @@
 /* 
 ******************************************
-Reset
+RESET
 *****************************************
 */
 
@@ -12,7 +12,7 @@ Reset
 
 /* 
 *****************************************
-Setup
+SETUP
 **************************************** 
 */
 
@@ -31,10 +31,15 @@ Setup
     height: 300px;
 } */
 
+/* .main_partners{
+    /* height: 400px; */
+    background-color: yellow;
+} */
+
 
 /* 
 *****************************************
-Common
+COMMON
 ***************************************** 
 */
 
@@ -61,7 +66,7 @@ header a, footer a{
 
 /* 
 *****************************************
-Buttons
+BUTTONS
 ***************************************** 
 */
 
@@ -80,7 +85,7 @@ Buttons
 
 /* 
 *****************************************
-Header
+HEADER
 *****************************************
 */
 
@@ -124,11 +129,11 @@ ul.menu{
 
 /* 
 *****************************************
-Main
+MAIN
 ***************************************** 
 */
 
-/* Main First Container */
+/* MAIN FIRST CONTAINER */
 
 /* forzata questa regola per riuscire a far partire il testo dopo l'header
 fisso e non sovrapporlo. Padding-top: 120px; */
@@ -184,7 +189,7 @@ main h1{
 }
 
 
-/* Main Slim Container */
+/* MAIN SLIM CONTAINER - ABBONAMENTI */
 
 .main_slim_container{
     max-width: 60%;
@@ -315,6 +320,49 @@ Piano Abbonamento Singolo ai bottoni degli altri Piani Abbonamento */
     position: absolute;
     top: 95px;
     right: 30px;
+}
+
+
+/* MAIN SLIM CONTAINER - PARTNER */
+
+
+.main_partners{
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+
+/* NOTE- Da chiedere: ho dovuto impostare larghezza 200% al contenitore
+dell'immagine e 130% al contenitore del contenuto */
+.partner_content{
+    padding: 40px 40px;
+    width: 130%;
+}
+
+.partner_image{
+    width: 200%;
+}
+/* fine nota */
+
+.partner_image img{
+    width: 100%;
+    display: block;
+}
+
+.partner_content h3{
+    font-size: 25px;
+}
+
+.partner_content *{
+    margin: 20px 0;
+}
+
+.partner_content > button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 
