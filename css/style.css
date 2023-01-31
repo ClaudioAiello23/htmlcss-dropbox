@@ -36,6 +36,11 @@ SETUP
     background-color: yellow;
 } */
 
+.main_large_container{
+    background-color: lightblue;
+    height: 500px;
+}
+
 
 /* 
 *****************************************
@@ -399,6 +404,70 @@ dalla risoluzione dello schermo. */
 .statistics{
     margin: 150px 0;
     max-width: 75%;
+}
+
+
+/* MAIN LARGE CONTAINER - LOGHI PARTNERS */
+
+.logo_container{
+    display:flex;
+}
+
+.small_square_cont, .big_square_cont{
+    width: calc(100vw/3);
+    height: calc(100vw/3);
+}
+
+.small_square_cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loghi_box{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+.loghi_box img{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#designit_icon{
+    background-color:#a2d39b ;
+}
+
+#asu_icon{
+    background-color:#61082b ;
+}
+
+#uf_icon{
+    background-color:#0093ce ;
+}
+
+#topps_icon{
+    background-color:#ff1c1c ;
+}
+
+#wbr_icon{
+    background-color:#d5001f;
+}
+
+#hc_icon{
+    background-color:#b4d0e7 ;
+}
+
+#lonely_planet_icon{
+    background-color:#0d2481;
+}
+
+#clear_channel_icon{
+    background-color:#ffd830 ;
 }
 
 
