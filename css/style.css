@@ -36,6 +36,11 @@ SETUP
     background-color: yellow;
 } */
 
+footer{
+    height: 400px;
+    background-color: black;
+}
+
 
 
 
@@ -252,7 +257,7 @@ main h1{
 }
 
 /* Selettore avanzato :not(); tutte le scritte presenti nella classe
-"subscription" hanno font size "14"; solo l'h3 classe "subscription"
+"subscription" hanno font size "16"; solo l'h3 classe "subscription"
 ha font size "25". */
 
 
@@ -532,4 +537,31 @@ dalla risoluzione dello schermo. */
 
 .faq_question a{
     padding-right: 30px;
+}
+
+
+/* 
+*****************************************
+FOOTER
+***************************************** 
+*/
+
+footer{
+    padding: 60px 250px 40px 250px;
+    color: white;
+}
+
+.footer_box{
+    border: 1px dashed white;
+}
+
+.footer_nav li{
+    list-style: none;
+    line-height: 40px;
+}
+
+.footer_title{
+    font-size: 40 px;
+    font-weight: bold;
+    padding-bottom: 25px;
 }
