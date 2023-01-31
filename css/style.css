@@ -44,7 +44,7 @@ COMMON
 */
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* 
@@ -62,6 +62,16 @@ header, .main_first_container a, footer{
 header a, footer a{
     color: inherit;
     text-decoration: inherit;
+}
+
+main h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: 25px;
+    line-height: 30px;
 }
 
 /* 
@@ -197,11 +207,6 @@ main h1{
     padding-top: 100px;
 }
 
-.main_slim_container h2{
-    font-size: 35px;
-    margin-bottom: 40px;
-}
-
   .radio_buttons span{
     padding-right: 50px;
 }
@@ -240,22 +245,22 @@ main h1{
     line-height: 40px;
 }
 
+.type div{
+    color: gray;
+}
 
 /* Selettore avanzato :not(); tutte le scritte presenti nella classe
 "subscription" hanno font size "14"; solo l'h3 classe "subscription"
 ha font size "25". */
 
-h3{
-    font-size: 25px;
-}
 
-.type div{
-    color: gray;
+.subscription h3{
+    font-size: 25px;
 }
 
 .subscription:not(.type h3)
 {
-    font-size: 14px;
+    font-size: 16px;
 }
 /* 
 ************************** */
@@ -348,9 +353,6 @@ Piano Abbonamento Singolo ai bottoni degli altri Piani Abbonamento */
     display: block;
 }
 
-.partner_content h3{
-    font-size: 25px;
-}
 
 .partner_content *{
     margin: 20px 0;
@@ -391,8 +393,6 @@ dalla risoluzione dello schermo. */
 }
 
 .business_container h3{
-    font-size: 18px;
-    line-height: 25px;
     margin-bottom: 20px;
 }
 
