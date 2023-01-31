@@ -12,39 +12,6 @@ RESET
 
 /* 
 *****************************************
-SETUP
-**************************************** 
-*/
-
-/* header{
-    height: 80px;
-} */
-
-/* .main_slim_container{
-    height: 1000px;
-    background-color: green;
-
-} */
-
-/* .info_enterprise_plan{
-    background-color: red;
-    height: 300px;
-} */
-
-/* .main_partners{
-    height: 400px; 
-    background-color: yellow;
-} */
-
-/* footer{
-    height: 400px;
-} */
-
-
-
-
-/* 
-*****************************************
 COMMON
 ***************************************** 
 */
@@ -98,6 +65,11 @@ BUTTONS
     color: white;
     padding:10px;
     font-family: 'Open Sans', sans-serif;
+}
+
+/* cambia colore (blu più leggero) quando vado sopra ai bottoni col mouse */
+.standard_buttons:hover{
+    background-color: #2b78f4;
 }
 
 
@@ -169,7 +141,7 @@ main .main_first_container{
 main h1{
     font-size: 70px;
     margin-bottom: 30px;
-    line-height: 100px;
+    line-height: 80px;
 }
 
 .main_first_container section{
@@ -185,16 +157,16 @@ main h1{
 }
 
 .intro_image img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .intro_content{
-    padding-top: 40px;
+    padding-top: 30px;
     width: 30%;
 }
 
 .main_first_container button{
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 
@@ -272,6 +244,14 @@ ha font size "25". */
 /* **************************  */
 
 
+/* Inserita regola min-height alla classe.feature per dare una altezza
+minima al contenitore precedente rispetto ai bottoni blu, in modo che questi
+ultimi siano allineati alla stessa altezza tra i vari box.  */
+.feature{
+    min-height: 255px;
+}
+/* ******************************** */
+
 .feature > div{
     padding-bottom: 20px;
 }
@@ -292,12 +272,6 @@ ha font size "25". */
     padding: 30px 0;
 }
 
-/* forzatura singola per allineare il bottone blu del
-Piano Abbonamento Singolo ai bottoni degli altri Piani Abbonamento */
-#single_plan_trial{
-    padding-top: 48px;
-}
-/* fine forzatura */
 
 .plan hr{
     width: 50px;
@@ -389,7 +363,7 @@ dalla risoluzione dello schermo. */
 
 .business_content{
     width: calc(100%/3);
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 /* *********************** */
 
@@ -438,17 +412,29 @@ dalla risoluzione dello schermo. */
     position: relative;
 }
 
+#mini_box{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #a2d39b;
+}
+
+
 .loghi_box img{
     width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(1);   /* Filter: proprietà che inverte il colore dell'immagine svg da bianco a nero e viceversa */
 }
 
 
 #designit_icon{
-    background-color:#a2d39b ;
+    background-color:#d1e9cd ;
 }
 
 #asu_icon{
@@ -558,7 +544,7 @@ footer{
 .footer_nav_list li{
     list-style: none;
     line-height: 40px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .footer_title{
