@@ -409,7 +409,7 @@ dalla risoluzione dello schermo. */
 
 /* MAIN LARGE CONTAINER - LOGHI PARTNERS */
 
-.logo_container{
+.loghi_container{
     display:flex;
 }
 
@@ -421,6 +421,14 @@ dalla risoluzione dello schermo. */
 .small_square_cont{
     display: flex;
     flex-wrap: wrap;
+}
+
+.big_square_cont{
+    background-color:#f5f5f5;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
 }
 
 .loghi_box{
@@ -468,6 +476,11 @@ dalla risoluzione dello schermo. */
 
 #clear_channel_icon{
     background-color:#ffd830 ;
+}
+
+
+.loghi_container hr{
+    width: 100px;
 }
 
 
