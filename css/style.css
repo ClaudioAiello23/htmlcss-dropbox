@@ -68,13 +68,13 @@ BUTTONS
 }
 
 /* cambia colore (blu più leggero) quando vado sopra ai bottoni col mouse */
+
 .standard_buttons:hover{
     background-color: #2b78f4;
 }
 
-
-
 /* ******************* */
+
 
 
 /* 
@@ -93,7 +93,6 @@ header{
     z-index: 999;
     background-color: white;
 }
-
 
 ul.menu{
    list-style: none; 
@@ -134,7 +133,7 @@ MAIN
 ***************************************** 
 */
 
-/* MAIN FIRST CONTAINER */
+/* SEZIONE MAIN FIRST CONTAINER */
 
 /* forzata questa regola per riuscire a far partire il testo dopo l'header
 fisso e non sovrapporlo. Padding-top: 120px; */
@@ -190,7 +189,7 @@ main h1{
 }
 
 
-/* MAIN SLIM CONTAINER - ABBONAMENTI */
+/* SEZIONE MAIN SLIM CONTAINER - ABBONAMENTI */
 
 .radio_buttons span{
     padding-right: 50px;
@@ -319,7 +318,7 @@ ultimi siano allineati alla stessa altezza tra i vari box.  */
 }
 
 
-/* MAIN SLIM CONTAINER - PARTNER */
+/* SEZIONE MAIN SLIM CONTAINER - PARTNER */
 
 
 .main_partners{
@@ -352,7 +351,7 @@ ultimi siano allineati alla stessa altezza tra i vari box.  */
 }
 
 
-/* MAIN SLIM CONTAINER - DROPBOX BUSINESS */
+/* SEZIONE MAIN SLIM CONTAINER - DROPBOX BUSINESS */
 
 .main_business{
     margin-top: 30px 0;
@@ -389,7 +388,7 @@ dalla risoluzione dello schermo. */
 }
 
 
-/* MAIN LARGE CONTAINER - LOGHI PARTNERS */
+/* SEZIONE MAIN LARGE CONTAINER - LOGHI PARTNERS */
 
 .loghi_container{
     display:flex;
@@ -482,7 +481,7 @@ dalla risoluzione dello schermo. */
 
 }
 
-/* MAIN BOTTOM CONTAINER - PROVA GRATUITA + FAQ */
+/* SEZIONE MAIN BOTTOM CONTAINER - PROVA GRATUITA + FAQ */
 
 .main_bottom{
     background-color: #b4d0e7;
@@ -515,7 +514,7 @@ dalla risoluzione dello schermo. */
     font-weight: bold;
 }
 
-.faq_box div{
+.faq_content{
     padding: 25px 0;
     border-bottom: 1px solid lightgrey;
     border-top: 1px solid lightgrey;
@@ -527,9 +526,24 @@ dalla risoluzione dello schermo. */
     align-items: center;
 }
 
-.faq_question a{
+.faq_question > div{
     padding-right: 30px;
 }
+
+/* 
+Far apparire il box nascosto nelle Faq cliccando sulla domanda Faq;
+Però il box appare solo tenendo cliccato. */
+
+.faq_answer{
+    display: none;
+}
+
+
+.faq_content:active .faq_answer{
+    display: block;
+}
+/* ************************** */
+
 
 
 /* 
